@@ -1,32 +1,43 @@
+////
+////  sunsim_circadian_appApp.swift
+////  sunsim_circadian_app
+////
+////  Created by J. Romero on 2024-04-20.
+////
 //
-//  sunsim_circadian_appApp.swift
-//  sunsim_circadian_app
+//import Foundation
+//import SwiftUI
 //
-//  Created by J. Romero on 2024-04-19.
 //
+//@main
+//struct sunsim_circadian_appApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
 
+//
+//  swift_test_projectApp.swift
+//  swift_test_project
+//
+//  Created by J. Romero on 2024-04-05.
+//
 import SwiftUI
-import SwiftData
+import Luxometer
 
 @main
-struct sunsim_circadian_appApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+struct sunsim_circadian_app: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
+
+#Preview {
+    ContentView()
+}
+
+

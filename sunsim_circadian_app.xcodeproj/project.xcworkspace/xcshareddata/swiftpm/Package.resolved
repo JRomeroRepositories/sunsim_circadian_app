@@ -1,0 +1,15 @@
+{
+  "originHash" : "f2552e75c33046edf806841ca9a996f6731ee12f7a6940bebf6d31eeffd2c15a",
+  "pins" : [
+    {
+      "identity" : "luxometer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Basistiy/Luxometer",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f3e028b3403ddb2fa5d2451c17c96295747a3987"
+      }
+    }
+  ],
+  "version" : 3
+}
